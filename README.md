@@ -82,3 +82,11 @@ cmake .. && make
 
 待续！！！
 
+----------------------------------------------------
+
+### 4.使用加载器推荐模板
+
+```bash
+git clone https://github.com/v-atamanenko/soloader-boilerplate.git
+```
+
