@@ -80,6 +80,23 @@ cmake .. && make
 
 ### 3.检测apk是否满足移植要求
 
+移植安卓游戏要求：
+
+✔️ 有ARMv6 或 ARMv7 可执行文件，只存在ARMv8 可执行文件就无法移植
+
+✔️ 有OpenGL：要求为GLES 1 或 GLES 2，GLES 3+无法移植，低于的可以移植
+
+✔️ FMOD：如果存在`libfmod.so`和`libfmodstudio.so`，可以移植声音，如果存在其他 FMOD 文件例如（`libfmodevent.so`，`libfmodex.so`），则游戏无法移植声音。
+
+
+❌ Kotlin：如果存在 Kotlin 文件夹，但没有 lib 文件夹，则游戏无法移植。
+
+❌ Unity 游戏：如果 lib 文件夹包含 libunity.so，则游戏无法移植。
+
+❌ Java 游戏：如果 lib 文件夹包含 libgdx.so，则游戏无法移植。
+
+判断OpenGL版本可以反编译AndroidManifest.xml，搜索glEsVersion数字（转换成二进制查看）
+
 [在线反编译apk-网站1](https://tool.tds.qq.com/apk-analyzer)
 
 待续！！！
