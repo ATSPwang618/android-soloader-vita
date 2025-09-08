@@ -98,10 +98,15 @@ cmake .. && make
 判断OpenGL版本可以反编译AndroidManifest.xml，搜索glEsVersion数字（转换成二进制查看）
 
 [在线反编译apk-网站1](https://tool.tds.qq.com/apk-analyzer)
-
-待续！！！
-
-
+----------
+补充说明（来自初代NPC大大）：
+SoLoad加载器游戏移植说明
+1游戏apk不是unity制作的，可以看其他公告鉴别
+2游戏apk一定要有32位的so文件，如何鉴别就是看游戏apk里的lib文件夹里面有armeabi或armeabi-v7a文件夹就是32位的了。
+3游戏apk要求openGL的版本为3.0及以下的
+4游戏apk的游戏逻辑最好是在一个so文件里,
+因为现在好像只能加载一个so文件.
+群里的soload加载器工具文件夹里有相应的工具和说明例子可以看
 
 ----------------------------------------------------
 
