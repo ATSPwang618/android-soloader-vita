@@ -121,7 +121,7 @@ cmake .. && make
 
 判断OpenGL版本可以反编译AndroidManifest.xml，搜索glEsVersion数字（转换成二进制查看）
 
-实在找不到的话可以考虑apk全部反编译，查看opengl调用的相关接口，例如我在《夏日口袋》这个官方安卓版了，在n.java这个文件发现的这一行
+实在xml文件里面找不到的话可以考虑apk全部反编译，查看opengl调用的相关接口，例如我在《夏日口袋》这个官方安卓版了，在n.java这个文件发现的这一行
 ```bash
 // 使用的是GL10接口，这表明：
 import javax.microedition.khronos.opengles.GL10;
