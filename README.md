@@ -129,7 +129,9 @@ import javax.microedition.khronos.opengles.GL10;
 才发现这个游戏用的是gl10的接口，表明他属于OpenGL ES 1.1
 
 
-[在线反编译apk-网站1](https://tool.tds.qq.com/apk-analyzer)
+[在线下载完整反编译apk-网站2](http://www.javadecompilers.com/apk)
+
+[在线查看反编译apk的xml信息-网站1](https://tool.tds.qq.com/apk-analyzer)
 ----------
 补充说明（来自初代NPC大大）：
 
